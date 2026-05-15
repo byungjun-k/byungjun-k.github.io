@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of Byungjun Kim.">
+    <meta property="og:title" content="Byungjun Kim | Academic Homepage">
+    <meta property="og:description" content="Research on generative models, AR/video generation, inference-time guidance, and noise/embedding optimization.">
+    <title>Byungjun Kim | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#publications">Publications</a>
+                <a href="#research-interests">Research Interest</a>
+                <a href="#news">News</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button type="button" class="nav-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="nav-btn-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="nav-btn-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <span class="nav-btn-label theme-label">Light</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name" data-config="name">Byungjun Kim</h1>
+                <p class="hero-title" data-config="role_university">M.S. Student in AI at BISPL, KAIST</p>
+                <p class="hero-description" data-config="bio">
+                    I work on generative models, with a current focus on AR/video generation,
+                    inference-time guidance, and noise/embedding optimization.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-placeholder">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Publications
+            </h2>
+            <div class="publications-list" id="cfg-publications"></div>
+        </div>
+    </section>
+
+    <!-- Research Interest Section -->
+    <section id="research-interests" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Research Interest
+            </h2>
+            <div class="projects-grid" id="cfg-research-interests"></div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> News
+            </h2>
+            <div class="news-list" id="cfg-news"></div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Education
+            </h2>
+            <div class="education-grid" id="cfg-education"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Contact
+            </h2>
+            <div class="contact-content" id="cfg-contact">
+                <p class="contact-intro">Feel free to reach out.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p id="cfg-footer">&copy; 2026 Byungjun Kim.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
