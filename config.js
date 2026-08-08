@@ -9,7 +9,9 @@ const USER_CONFIG = {
   university: "BISPL, KAIST",
   email:      "bjkim@kaist.ac.kr",
 
-  bio:        "I work on generative models, with a current focus on AR/video generation, inference-time guidance, and noise/embedding optimization. My recent projects study how pretrained diffusion and video generators can be steered at inference time without architectural modification or expensive retraining.",
+
+  bio: "My research focuses on generative models and vision-language-action (VLA) models, with particular interests in inference-time guidance and diverse generation. I am interested in developing efficient methods to improve the diversity, controllability, and generalization of pretrained models without expensive retraining.",
+
 
   // Put your profile image at this path, or change the path below.
   photo:      "assets/profile.jpeg",
@@ -47,23 +49,7 @@ const USER_CONFIG = {
     },
   ],
 
-  researchInterests: [
-    {
-      name: "AR / Video Generation",
-      desc: "Long-horizon autoregressive and diffusion-based video generation, with an emphasis on temporal consistency, motion dynamics, and stable generation trajectories.",
-      tags: ["AR Video", "Temporal Modeling", "Long-Horizon Generation"],
-    },
-    {
-      name: "Inference-Time Guidance",
-      desc: "Training-free control methods that steer pretrained diffusion and video generators through semantic perturbations and adaptive guidance schedules.",
-      tags: ["Guidance", "Training-Free", "Diffusion"],
-    },
-    {
-      name: "Noise / Embedding Optimization",
-      desc: "Noise-space and embedding-space optimization for improving diversity, mode coverage, and motion behavior without changing model weights.",
-      tags: ["Noise Optimization", "Embedding Perturbation", "Diversity"],
-    },
-  ],
+  researchInterests: [ { name: "Vision-Language-Action Models", desc: "Vision-language-action models for embodied intelligence, with a focus on multimodal perception, action generation, and generalizable decision-making from visual and language inputs.", tags: ["VLA", "Embodied AI", "Multimodal Learning"], }, { name: "Inference-Time Guidance", desc: "Training-free control methods that steer pretrained generative models at inference time through semantic perturbations, adaptive guidance, and test-time optimization.", tags: ["Guidance", "Training-Free", "Test-Time Optimization"], }, { name: "Diverse Generation", desc: "Methods for improving diversity, mode coverage, and controllability in generative models through noise-space and representation-space optimization.", tags: ["Diversity", "Mode Coverage", "Generative Models"], }, ],
 
   news: [
     {
