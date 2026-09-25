@@ -26,6 +26,18 @@ const USER_CONFIG = {
   publications: [
     {
       year:     2026,
+      title:    "MotionCFG: Boosting Motion Dynamics via Semantic Motion Sharpening",
+      authors:  "Byungjun Kim, Soobin Um, Jong Chul Ye",
+      venue:    "NeurIPS 2026",
+      image:    "assets/motioncfg.png",
+      links:    {
+        pdf: "https://arxiv.org/abs/2603.14073",
+      },
+      abstract: "A training-free guidance method that perturbs motion-related concept embeddings to improve motion dynamics and reduce static bias in text-to-video generation.",
+    },
+    
+    {
+      year:     2026,
       title:    "Diverse Text-to-Image Generation via Contrastive Noise Optimization",
       authors:  "Byungjun Kim, Soobin Um, Jong Chul Ye",
       venue:    "The Fourteenth International Conference on Learning Representations (ICLR) 2026",
@@ -36,17 +48,7 @@ const USER_CONFIG = {
       },
       abstract: "A training-free inference framework that optimizes initial noise vectors to improve semantic diversity and mitigate mode collapse in text-to-image generation.",
     },
-    {
-      year:     2026,
-      title:    "MotionCFG: Boosting Motion Dynamics via Semantic Motion Sharpening",
-      authors:  "Byungjun Kim, Soobin Um, Jong Chul Ye",
-      venue:    "NeurIPS 2026",
-      image:    "assets/motioncfg.png",
-      links:    {
-        pdf: "https://arxiv.org/abs/2603.14073",
-      },
-      abstract: "A training-free guidance method that perturbs motion-related concept embeddings to improve motion dynamics and reduce static bias in text-to-video generation.",
-    },
+
   ],
 
   researchInterests: [ { name: "Vision-Language-Action Models", desc: "Vision-language-action models for embodied intelligence, with a focus on multimodal perception, action generation, and generalizable decision-making from visual and language inputs.", tags: ["VLA", "Embodied AI", "Multimodal Learning"], }, { name: "Inference-Time Guidance", desc: "Training-free control methods that steer pretrained generative models at inference time through semantic perturbations, adaptive guidance, and test-time optimization.", tags: ["Guidance", "Training-Free", "Test-Time Optimization"], }, { name: "Diverse Generation", desc: "Methods for improving diversity, mode coverage, and controllability in generative models through noise-space and representation-space optimization.", tags: ["Diversity", "Mode Coverage", "Generative Models"], }, ],
