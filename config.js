@@ -38,9 +38,9 @@ const USER_CONFIG = {
     },
     {
       year:     2026,
-      title:    "MotionCFG: Boosting Motion Dynamics via Stochastic Concept Perturbation",
+      title:    "MotionCFG: Boosting Motion Dynamics via Semantic Motion Sharpening",
       authors:  "Byungjun Kim, Soobin Um, Jong Chul Ye",
-      venue:    "Under Review",
+      venue:    "NeurIPS 2026",
       image:    "assets/motioncfg.png",
       links:    {
         pdf: "https://arxiv.org/abs/2603.14073",
@@ -54,17 +54,27 @@ const USER_CONFIG = {
   news: [
     {
       date: "2026",
-      badge: "ICLR",
-      text: "Diverse Text-to-Image Generation via Contrastive Noise Optimization accepted to ICLR 2026.",
+      badge: "NeurIPS",
+      text: "MotionCFG: Boosting Motion Dynamics via Semantic Motion Sharpening accepted to NeurIPS 2026.",
+    },
+      {
+      date: "2026",
+      badge: "Academic",
+      text: "Starting an internship from Vector Institute, Toronto, Canada from September 2026.",
     },
     {
       date: "2026",
-      badge: "Preprint",
-      text: "MotionCFG released as a preprint and is currently under review.",
+      badge: "ICLR",
+      text: "Diverse Text-to-Image Generation via Contrastive Noise Optimization accepted to ICLR 2026.",
     },
   ],
 
   education: [
+    {
+      period: "2026 – Present",
+      degree: "AI Research Internship",
+      institution: "Vector Institute",
+    },
     {
       period: "2025 – Present",
       degree: "M.S., Graduate School of AI",
