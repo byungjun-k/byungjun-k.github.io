@@ -76,9 +76,14 @@ function populateSimpleFields(cfg) {
   }
 }
 
-function boldName(authors, name) {
-  if (!authors || !name) return authors || '';
-  return authors.replace(name, `<strong>${name}</strong>`);
+function renderAuthors(authors, highlightedName, authorMarks = {}) {
+  if (!authors) return '';
+  return authors.split(',').map(rawName => {
+    const name = rawName.trim();
+    const displayName = name === highlightedName ? `<strong>${name}</strong>` : name;
+    const mark = authorMarks[name];
+    return mark ? `${displayName}<sup class="pub-author-mark">${mark}</sup>` : displayName;
+  }).join(', ');
 }
 
 function renderLinks(links) {
@@ -139,7 +144,8 @@ function populateLists(cfg) {
                 <h3 class="pub-title">${p.title}</h3>
                 <div class="pub-links">${renderLinks(p.links)}</div>
               </div>
-              <p class="pub-authors">${boldName(p.authors, cfg.name)}</p>
+              <p class="pub-authors">${renderAuthors(p.authors, cfg.name, p.authorMarks)}</p>
+              ${p.authorNote ? `<p class="pub-author-note">${p.authorNote}</p>` : ''}
               <p class="pub-venue">${p.venue}</p>
               ${p.abstract ? `<p class="pub-abstract">${p.abstract}</p>` : ''}
             </div>
