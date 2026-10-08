@@ -28,6 +28,8 @@ const USER_CONFIG = {
       year:     2026,
       title:    "MotionCFG: Boosting Motion Dynamics via Semantic Motion Sharpening",
       authors:  "Byungjun Kim, Soobin Um, Jong Chul Ye",
+      authorMarks: { "Soobin Um": "†", "Jong Chul Ye": "†" },
+      authorNote: "† Co-corresponding authors.",
       venue:    "NeurIPS 2026",
       image:    "assets/motioncfg.png",
       links:    {
@@ -40,6 +42,8 @@ const USER_CONFIG = {
       year:     2026,
       title:    "Diverse Text-to-Image Generation via Contrastive Noise Optimization",
       authors:  "Byungjun Kim, Soobin Um, Jong Chul Ye",
+      authorMarks: { "Byungjun Kim": "*", "Soobin Um": "*" },
+      authorNote: "* Equal contribution (co-first authors).",
       venue:    "The Fourteenth International Conference on Learning Representations (ICLR) 2026",
       image:    "assets/cno.jpg",
       links:    {
