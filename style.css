@@ -535,6 +535,26 @@ a:hover {
     margin-bottom: 2px;
 }
 
+.pub-authors {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.pub-author-mark {
+    font-size: 0.75em;
+    vertical-align: super;
+    font-weight: 600;
+    margin-left: 1px;
+}
+
+.pub-author-note {
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+}
+
 .pub-venue {
     font-size: 0.85rem;
     color: var(--text-muted);
